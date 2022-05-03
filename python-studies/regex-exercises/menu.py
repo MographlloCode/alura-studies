@@ -15,35 +15,35 @@ elif(menu == 4):
   print('\n4. Write a Python program that matches a string that has an a followed by zero or one \'b\'.')
   exercise_four()
 elif(menu == 5):
-  print('\n')
+  print('\n5. Write a Python program that matches a string that has an a followed by three \'b\'.')
   exercise_five()
 elif(menu == 6):
-  print('\n')
+  print('\n6. Write a Python program that matches a string that has an a followed by two to three \'b\'. ')
   exercise_six()
 elif(menu == 7):
-  print('\n')
+  print('\n7. Write a Python program to find sequences of lowercase letters joined with a underscore. ')
   exercise_seven()
 elif(menu == 8):
-  print('\n')
-  exercise_two()
+  print('\n8. Write a Python program to find the sequences of one upper case letter followed by lower case letters. ')
+  exercise_eight()
 elif(menu == 9):
-  print('\n')
-  exercise_three()
+  print('\n9. Write a Python program that matches a string that has an \'a\' followed by anything, ending in \'b\'.')
+  exercise_nine()
 elif(menu == 10):
-  print('\n')
-  exercise_one()
+  print('\n10. Write a Python program that matches a word at the beginning of a string.')
+  exercise_ten()
 elif(menu == 11):
-  print('\n')
-  exercise_one()
+  print('\n11. Write a Python program that matches a word at the end of string, with optional punctuation.')
+  exercise_eleven()
 elif(menu == 12):
-  print('\n')
-  exercise_two()
+  print('\n12. Write a Python program that matches a word containing \'z\'. ')
+  exercise_twelve()
 elif(menu == 13):
-  print('\n')
-  exercise_three()
+  print('\nWrite a Python program that matches a word containing \'z\', not at the start or end of the word.')
+  exercise_thirteen()
 elif(menu == 14):
-  print('\n')
-  exercise_one()
+  print('\n14. Write a Python program to match a string that contains only upper and lowercase letters, numbers, and underscores. ')
+  exercise_fourteen()
 elif(menu == 15):
   print('\n')
   exercise_two()

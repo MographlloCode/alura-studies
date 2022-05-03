@@ -94,31 +94,95 @@ def exercise_seven():
 
 # 8. Write a Python program to find the sequences of one upper case letter followed by lower case letters. 
 
+def exercise_eight():
+  user_entry = input('Type something: ')
+  def validator(text):
+    validator = '^[A-Z]{1}[a-z]+$'
+    if re.search(validator, text):
+      return 'Found a match!'
+    else:
+      return ('Not matched!')
 
-
+  print(validator(user_entry))
+  
 # 9. Write a Python program that matches a string that has an 'a' followed by anything, ending in 'b'. 
 
+def exercise_nine():
+  user_entry = input('Type something: ')
+  def validator(text):
+    validator = 'a.*?b$'
+    if re.search(validator, text):
+      return 'Found a match!'
+    else:
+      return ('Not matched!')
 
+  print(validator(user_entry))
 
 # 10. Write a Python program that matches a word at the beginning of a string. 
 
+def exercise_ten():
+  user_entry = input('Type Something: ')
+  def validator(text):
+    validator = '^\w+'
+    if re.search(validator, text):
+      return 'Found a match!'
+    else:
+      return ('Not matched!')
 
+  print(validator(user_entry))    
 
 # 11. Write a Python program that matches a word at the end of string, with optional punctuation. 
 
+def exercise_eleven():
+  user_entry = input('Type Something: ')
+  def validator(text):
+    validator = '\w+\S*$'
+    if re.search(validator, text):
+      return 'Found a match!'
+    else:
+      return ('Not matched!')
 
+  print(validator(user_entry))   
 
 # 12. Write a Python program that matches a word containing 'z'. 
 
+def exercise_twelve():
+  user_entry = input('Type Something: ')
+  def validator(text):
+    validator = '.z+.'
+    if re.search(validator, text):
+      return 'Found a match!'
+    else:
+      return ('Not matched!')
+
+  print(validator(user_entry))   
 
 
 # 13. Write a Python program that matches a word containing 'z', not at the start or end of the word. 
 
+def exercise_thirteen():
+  user_entry = input('Type Something: ')
+  def validator(text):
+    validator = '\Bz\B'
+    if re.search(validator, text):
+      return 'Found a match!'
+    else:
+      return ('Not matched!')
 
+  print(validator(user_entry))  
 
 # 14. Write a Python program to match a string that contains only upper and lowercase letters, numbers, and underscores. 
 
+def exercise_fourteen():
+  user_entry = input('Type Something: ')
+  def validator(text):
+    validator = '^[a-zA-Z0-9_]*$'
+    if re.search(validator, text):
+      return 'Found a match!'
+    else:
+      return ('Not matched!')
 
+  print(validator(user_entry))  
 
 # 15. Write a Python program where a string will start with a specific number. 
 
