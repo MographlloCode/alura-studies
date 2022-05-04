@@ -186,20 +186,46 @@ def exercise_fourteen():
 
 # 15. Write a Python program where a string will start with a specific number. 
 
+def exercise_fifteen():
+  user_entry = input('Type Something: ')
+  def validator(text):
+    validator = '^[0-9]+'
+    if re.search(validator, text):
+      return 'Found a match!'
+    else:
+      return ('Not matched!')
+
+  print(validator(user_entry))  
 
 
 # 16. Write a Python program to remove leading zeros from an IP address. 
 
-
+def exercise_sixteen():
+  ip = '192.168.045.003'
+  string = re.sub('\.[0]*', '.', ip) # The sub() function replaces the matches with the text of your choice: in this exemple → 192.168.45.3
+  print(string)
 
 # 17. Write a Python program to check for a number at the end of a string. 
 
+def exercise_seventeen():
+  user_entry = input('Type Something: ')
+  def validator(text):
+    validator = re.compile(r'.*[0-9]$')
+    if validator.match(text):
+      return 'Found a match!'
+    else:
+      return ('Not matched!')
 
+  print(validator(user_entry))  
 
 # 18. Write a Python program to search the numbers (0-9) of length between 1 to 3 in a given string. 
 # "Exercises number 1, 12, 13, and 345 are important"
 
-
+# def exercise_eighteen():
+#   results = re.finditer(r'([0-9]{1-3})', 'Exercises number 1, 12, 13, and 345 are important') # 
+#   print('Number of length 1 to 3')
+#   for n in results:
+#     print(n.group(0)) #
 
 # 19. Write a Python program to search some literals strings in a string. 
 # Sample text : 'The quick brown fox jumps over the lazy dog.'

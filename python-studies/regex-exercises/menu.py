@@ -45,14 +45,14 @@ elif(menu == 14):
   print('\n14. Write a Python program to match a string that contains only upper and lowercase letters, numbers, and underscores. ')
   exercise_fourteen()
 elif(menu == 15):
-  print('\n')
-  exercise_two()
+  print('\n15. Write a Python program where a string will start with a specific number. ')
+  exercise_fifteen()
 elif(menu == 16):
-  print('\n')
-  exercise_three()
+  print('\n16. Write a Python program to remove leading zeros from an IP address. ')
+  exercise_sixteen()
 elif(menu == 17):
-  print('\n')
-  exercise_one()
+  print('\n17. Write a Python program to check for a number at the end of a string. ')
+  exercise_seventeen()
 elif(menu == 18):
   print('\n')
   exercise_two()
